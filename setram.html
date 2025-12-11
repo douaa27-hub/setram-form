@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire Demande Abonnement DOU - SETRAM</title>
+  <link rel="stylesheet" href="setram.css">
+  <link rel="icon" type="image/png" href="https://formulaire.setram.dz/images/setram-favicon.png">
+  <meta http-equiv="refresh" content="0; URL='setram.html'" />
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <img src="https://formulaire.setram.dz/images/setram-logo.png" alt="SETRAM Logo">
+      <h1>Formulaire Demande Abonnement DOU</h1>
+    </header>
+
+     <div class="lang-switch">
+        <button type="button" id="lang-btn">français / العربية</button>
+     </div>
+
+
+    <p class="subtitle">
+      Veuillez remplir tous les champs obligatoires marqués d'un <span class="required">*</span>
+    </p>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+      <div class="field">
+        <label for="prenom">Prénom <span class="required">*</span></label>
+        <input type="text" id="prenom" name="prenom" placeholder=" prénom" required>
+      </div>
+
+      <div class="field">
+        <label for="nom">Nom <span class="required">*</span></label>
+        <input type="text" id="nom" name="nom" placeholder="nom" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Adresse e-mail <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="email" required>
+      </div>
+
+      <div class="field">
+        <label for="matricule">Matricule (sans année du bac au début) <span class="required">*</span></label>
+        <input type="text" id="matricule" name="matricule" placeholder="matricule" required>
+      </div>
+
+      <div class="field">
+        <label for="annee">Année du Baccalauréat <span class="required">*</span></label>
+        <input type="number" id="annee" name="annee" placeholder="Année du Baccalauréat" min="1900" max="2099" required>
+      </div>
+
+      <div class="field">
+        <label for="telephone">Numéro de téléphone <span class="required">*</span></label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Numéro de téléphone" required>
+      </div>
+
+      <div class="field">
+        <label for="universite">Université <span class="required">*</span></label>
+        <select id="universite" name="universite" required>
+    <option value="" disabled selected>Sélectionnez une université</option>
+    <option>École Nationale Polytechnique</option>
+    <option>École Nationale Supérieure Agronomique</option>
+    <option>École Nationale Supérieure de Cybersécurité</option>
+    <option>École Nationale Supérieure de Journalisme et des Sciences de l'Information</option>
+    <option>École Nationale Supérieure de Technologie des Systèmes Autonomes</option>
+    <option>École Nationale Supérieure des Nanosciences et Nanotechnologie</option>
+    <option>École Nationale Supérieure des Sciences de la Mer</option>
+    <option>École Nationale Supérieure des Technologies Avancées</option>
+    <option>École Nationale Supérieure des Travaux Publics</option>
+    <option>École Nationale Supérieure d'Informatique</option>
+    <option>École Nationale Supérieure en Intelligence Artificielle</option>
+    <option>École Normale Supérieure - Kouba</option>
+      </select>
+    </div>
+
+      <div class="field">
+        <label for="photo">Photo d'identité <span class="required">*</span></label>
+        <div class="photo-box">
+          <img src="https://www.setram.dz/uploads/model_photo.png" alt="Exemple Photo ID">
+        </div>
+        <input type="file" id="photo" name="photo" accept=".jpg,.jpeg,.png" required>
+        <p class="hint">
+          Veuillez télécharger la photo d'identité qui sera utilisée pour votre carte d'abonnement DOU au format JPEG/PNG, maximum 3 MB.
+        </p>
+      </div>
+
+      <button type="submit">Soumettre ma demande</button>
+    </form>
+
+    <div class="contact">
+      <p>
+        En cas de problème ou pour modification, veuillez contacter le service client SETRAM via :
+        <a href="https://www.setram.dz/customer/ticket" target="_blank">Setram support</a>.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
